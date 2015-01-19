@@ -1,0 +1,31 @@
+{
+  "name": "litejsonlog",
+  "description": "A near-trivial library for logging JSON to local files",
+  "version": "0.0.0",
+  "author": "Dave Benson <daveb@ffem.org>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davebenson/litejsonlog.git"
+  },
+  "keywords": [
+    "logging",
+    "sysadmin",
+    "tools"
+  ],
+  "dependencies": {},
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.github.com/davebenson/litejsonlog/master/LICENSE"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/davebenson/litejsonlog/issues"
+  },
+  "homepage": "https://github.com/davebenson/litejsonlog",
+  "main": "lib/litejsonlog.js",
+  "scripts": {
+    "test": "node test/index.js"
+  },
+  "license": "ISC"
+}
