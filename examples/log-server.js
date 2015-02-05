@@ -8,10 +8,12 @@ option_parser.addInt('port', 'HTTP port').setMandatory();
 option_parser.addString('log-dir', 'Log Directory').setDefaultValue('examples/logs');
 option_parser.addString('scoreboard', 'Log Scoreboard File').setDefaultValue('examples/scoreboard');
 option_parser.addString('upload-script', 'Upload script').setDefaultValue('examples/example-upload-script.sh');
+option_parser.addFlag('minutely', 'Use per-minute log rotation');
 var options = option_parser.parse();
 
 litejsonlog.configure({
   dir: options.logDir,
+  minutely: options.minutely,
   postHandler: {
     scoreboardFilename: options.scoreboard,
     uploadScript: options.uploadScript,
