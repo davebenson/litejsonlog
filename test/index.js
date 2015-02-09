@@ -14,4 +14,5 @@ fake_time.initialize(t);
 log('foo',{bar:12});
 t += 2 * 3600 * 1000;
 fake_time.setTime(t);
-log.stop_rotation();
+log('foo',{bar:13});
+log.stopRotation();
